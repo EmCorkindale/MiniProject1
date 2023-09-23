@@ -1,0 +1,51 @@
+[
+    {
+        "image": "AubreySt.jpg",
+        "title": "BUY OUT OF SEASON FOR UNBEATABLE VALUE!",
+        "description":"4i Aubrey Street, Akaroa",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "garaging": "",
+        "parking": "1"
+    },
+    {
+        "image": "EastfieldDr.jpg",
+        "title": "MOVE IN READY",
+        "description":"38 Eastfield Drive, Lincoln",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "garaging": "2",
+        "parking": "2"
+    },
+    
+    {
+        "image": "KarnackCres.jpg",
+        "title": "UNLOCK THE POTENTIAL WITH THE KEY TO YOUR NEW HOME",
+        "description":"11 Karnack Crescent, Avonhead",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "garaging": "2",
+        "parking": "2"
+    },
+    
+    {
+        "image": "CamberwellPl.jpg",
+        "title": "POLISH THIS JEM",
+        "description":"22 Camberwell Place, Avonhead",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "garaging": "2",
+        "parking": "2"
+    },
+    
+    {
+        "image": "Faringdon.jpg",
+        "title": "THIS HAS TO BE ROLLESTONS BEST BUY",
+        "description":"103 Faringdon Boulevard, Rolleston",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "garaging": "1",
+        "parking": "1"
+    }
+    
+]
