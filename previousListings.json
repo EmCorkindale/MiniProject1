@@ -6,7 +6,8 @@
         "bedrooms": "2",
         "bathrooms": "1",
         "garaging": "",
-        "parking": "1"
+        "parking": "1",
+        "carport": ""
     },
     {
         "image": "EastfieldDr.jpg",
@@ -15,7 +16,8 @@
         "bedrooms": "3",
         "bathrooms": "2",
         "garaging": "2",
-        "parking": "2"
+        "parking": "2",
+        "carport": ""
     },
     
     {
@@ -25,7 +27,8 @@
         "bedrooms": "4",
         "bathrooms": "2",
         "garaging": "2",
-        "parking": "2"
+        "parking": "2",
+        "carport": ""
     },
     
     {
@@ -35,7 +38,8 @@
         "bedrooms": "3",
         "bathrooms": "2",
         "garaging": "2",
-        "parking": "2"
+        "parking": "2",
+        "carport": ""
     },
     
     {
@@ -45,7 +49,48 @@
         "bedrooms": "3",
         "bathrooms": "2",
         "garaging": "1",
-        "parking": "1"
+        "parking": "1",
+        "carport": ""
+    },
+    {
+        "image": "EdinburghSt.jpg",
+        "title": "SINGLE LEVEL CONVENIENCE",
+        "description":"107C Edinburgh Street, Spreydon",
+        "bedrooms": "3",
+        "bathrooms": "1",
+        "garaging": "2",
+        "parking": "2",
+        "carport": ""
+    }, 
+    {
+        "image": "BrynleySt.jpg",
+        "title": "RETAIN YOUR INDEPENDENT LIVING!",
+        "description":"1/14 Brynley Street, Hornby",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "garaging": "1",
+        "parking": "",
+        "carport": ""
+    },
+    {
+        "image": "CashmereRd.jpg",
+        "title": "CONVENIENT LOCATION AND GREAT SCHOOL ZONES",
+        "description":"161 Cashmere Road, Cashmere",
+        "bedrooms": "3",
+        "bathrooms": "1",
+        "garaging": "2",
+        "parking": "1",
+        "carport": "1"
+    },
+    {
+        "image": "922CashmereRd.jpg",
+        "title": "STONE'S THROW FROM THE QUARRY",
+        "description":"922 Cashmere Road, Cashmere",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "garaging": "2",
+        "parking": "2",
+        "carport": ""
     }
     
 ]
