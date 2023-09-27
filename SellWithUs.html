@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Corkindale and Co</title>
-    <link rel="icon" href="C:\Users\admin\Desktop\GitHub Course Work\Course-work\MiniProject1\JPEG.jpg"
-        type="image/icon type">
+    <!-- <link rel="icon" href="C:\Users\admin\Desktop\GitHub Course Work\Course-work\MiniProject1\JPEG.jpg"
+        type="image/icon type"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,18 +14,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,400&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 </head>
 
 <body>
     <style>
+        .whySell {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-bottom: 2px solid #F1F7ED;
+        }
+
         body {
             background-color: #0D1B2A;
             color: #F1F7ED;
             font-family: 'Open Sans', sans-serif, 'Poppins', sans-serif, 'Source Sans 3', sans-serif;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
         }
 
         .nav-link {
@@ -38,77 +42,27 @@
             padding-left: 7vw;
             padding-top: 0;
         }
+
         .navbar-toggler {
             background: url('https://api.iconify.design/typcn/th-menu-outline.svg?color=%23f1f7ed') no-repeat center center / contain;
-        }
-
-        h1,
-        h2 {
-            color: #F1F7ED;
-            font-family: 'Source Sans 3', sans-serif;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 30vh;
         }
 
         @media screen and (min-width: 601px) {
             .container-fluid {
                 max-height: 50px;
             }
+
         }
 
         /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
         @media screen and (max-width: 600px) {
-           h1, h2, h3{
-            font-size: 20px;
-            align-self: flex-start;
-           }
-            .nav-link{
+            .nav-link {
                 text-align: left;
             }
-            .banner {
-            display: flex;
-            flex-direction: row;
-            background-image: url('Simon-and-Michelle.jpg');
-            background-size:auto;
-            animation: fadeIn 5s 1;
-            text-align: center;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 14vh;
-        }
         }
 
         .dropdown:hover .dropdown-menu {
             display: block;
-        }
-
-        .banner {
-            display: flex;
-            flex-direction: row;
-            background-image: url('Simon-and-Michelle.jpg');
-            height: 600px;
-            background-position: center top;
-            background-size: cover;
-            text-align: center;
-            animation: fadeIn 5s 1;
-            text-align: center;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 14vh;
-        }
-        
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -168,16 +122,70 @@
             </div>
         </nav>
     </div>
-    <div class="banner">
-        <div id="heading">
-            <h1>Corkindale and Co</h1>
-            <h3>Michelle || Simon</h3>
-            <h2>Harcourts Grenadier</h2>
-            
+    <div class="whySell">
+        <div>
+            <h1>Why sell with us?</h1>
+            <div id="blurb">Experience Excellence in Real Estate with Simon and Michelle Corkindale!<br>
+
+                When it comes to selling your most valuable asset, trust and expertise matter. Meet Simon and Michelle
+                Corkindale, your dynamic real estate duo with a proven track record of turning property dreams into
+                reality.
+
+                With decades of combined experience in the real estate industry, Simon and Michelle bring a wealth of
+                knowledge to the table. They know the local market inside and out, ensuring you receive a competitive
+                and accurate valuation for your property.</div>
         </div>
     </div>
-    
-    
+    <div id="chart1" style="width: 600px; height: 400px;"></div>
+
+    <!-- <script type="text/javascript" src="echarts.js"></script> -->
+    <script type="text/javascript">
+        fetch('JulySales.json')
+            .then((response) => response.json())
+            .then(data => {
+                data.forEach(element => {
+                    option.series[0].data.push({ value: element.percentage, name: `Sold for ${element.salePrice}.` })
+                    chart.setOption(option);
+                });
+            })
+        // Define your chart options
+        var option = {
+            tooltip:
+            {
+                trigger: "item",
+                formatter: "{d}%"
+            },
+            series: [
+                {
+                    type: 'pie',
+
+                    color: [
+                        '#37A2yA',
+                        '#32C5E9',
+                        '#67E0E3',
+                        '#9FE6B8',
+                        '#FFDB5C',
+                        '#ff9f7f',
+                        '#fb7293',
+                        '#E062AE',
+                        '#E690D1',
+                        '#e7bcf3',
+                        '#9d96f5',
+                        '#8378EA',
+                        '#96BFFF'
+                    ],
+                    data: [
+
+                    ]
+                }
+            ]
+        };
+
+        // Create the chart
+        const chart = echarts.init(document.getElementById('chart1'));
+    </script>
+
+
 
     <div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true" style="color: #0D1B2A;">

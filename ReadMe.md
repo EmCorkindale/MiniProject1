@@ -24,7 +24,7 @@ What JS techniques have you used (eg. objects, arrays, DOM functions, loops, fun
 I have used json objects, arrays, DOM functions (have had to use css in different ways because of the DOM), functions, fetch, setInterval 
 
 What external tools/libraries have you used (eg. bootstrap/axios/charts)? How? Why?
-I have used Bootstrap for my navbar, contact form modal, and listing cards. I found it easier to do this to set the website up for responsiveness, however found editing the css far more difficult this way and had some issues with the contact form modal.
+I have used Bootstrap for my navbar, contact form modal, and listing cards. I found it easier to do this to set the website up for responsiveness, however found editing the css far more difficult this way and had some issues with the contact form modal. I used Iconify in my listing cards.
 I have also used charts to display auction sales.
 
 What kinds of HTML elements have you used (eg. tables, forms, divs, lists, headings, menus, videos, images)?

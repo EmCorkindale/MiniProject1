@@ -158,3 +158,28 @@ function myFunction() {
   var bootstrapModal = new bootstrap.Modal(modal);
   bootstrapModal.hide();
 }
+var option = {
+  series: [
+      {
+          type: 'pie',
+          data: [
+              {
+                  value: 335,
+                  name: 'Direct Visit'
+              },
+              {
+                  value: 234,
+                  name: 'Union Ad'
+              },
+              {
+                  value: 1548,
+                  name: 'Search Engine'
+              }
+          ]
+      }
+  ]
+};
+
+// Create the chart
+var chart = echarts.init(document.getElementById('chart1'));
+chart.setOption(option);
