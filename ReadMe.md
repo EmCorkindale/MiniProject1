@@ -34,4 +34,4 @@ What kinds of CSS features have you used (eg. animations, backgrounds, fonts, co
 I have used animations, backgrounds, fonts, colours, flexbox, fonts.
 
 How might you extend the features of your application in future?
-I would like to have more pages that match the drop down menus. My client would also like a blog in future, and would like a section for user's to see what properties in their area have sold for.
+I would like to have more pages that match the drop down menus. My client would also like a blog in future, and would like a section for user's to see what properties in their area have sold for. I would also like to tidy up the css and change some of the styling, as I have both inline css and css in a script tag. I'd also like to add comments for readability.
